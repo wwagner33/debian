@@ -70,4 +70,14 @@ Instalação do Visual Studio Code.
 ```sh
 sudo snap install --classic code
 ```
+Instalação do NordVPN.
+
+```sh
+sh <(curl -sSf https://downloads.nordcdn.com/apps/linux/install.sh)
+su - $USER
+nordvpn login
+nordvpn set technology openvpn
+nordvpn set protocol udp
+nordvpn connect
+```
 
