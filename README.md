@@ -92,5 +92,17 @@ gh repo list wwagner33 --limit 1000 | while read -r repo _; do
   gh repo clone "$repo" "$repo"
 done
 ```
+Instalação do Steam
 
+Instale o Steam através da Snap Store. Depois habilite a compatibilidade com o Linux no Settings -> Compatibillity. Use o Proton-GE para poder instalar jogos como o Neverwinter. Siga nos passos a seguir.
+```sh
+sudo apt install python3-pip
+sudo apt install python3-venv
+python3 -m venv .venv
+. .venv/bin/activite
+pip3 install protonup
+protonup -d "~/.steam/root/compatibilitytools.d/"
+protonup
+```
+Para utilizar o Proton-GE basta selecioná-lo na aba “Steam Play” da janela de configurações da sua Steam.
 
