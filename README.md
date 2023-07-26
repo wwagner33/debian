@@ -4,7 +4,7 @@ Arquivos de configuraçao e instalacoes feitas no Debian 11/12.
 Inserir o usuário wwagner no .sudoer.
 
 ```sh
-sudo apt install build-essental net-tools git wget curl linux-headers-$(uname -r) manpages-dev
+sudo apt install build-essential net-tools git wget curl linux-headers-$(uname -r) manpages-dev
 ```
 Instalação do AASDF seguindo o passo a passo presente no endereço [https://asdf-vm.com/pt-br/guide/getting-started.html#_2-download-asdf](https://asdf-vm.com/pt-br/guide/getting-started.html#_2-download-asdf).
 
