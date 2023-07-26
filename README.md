@@ -80,4 +80,17 @@ nordvpn set technology openvpn
 nordvpn set protocol udp
 nordvpn connect
 ```
+Instalação do github CLI (gh)
+```sh
+curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg && sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null && sudo apt update && sudo apt install gh -y
+
+```
+Fazendo a cópia de todos os repositórios
+```sh
+gh auth login
+gh repo list wwagner33 --limit 1000 | while read -r repo _; do
+  gh repo clone "$repo" "$repo"
+done
+```
+
 
