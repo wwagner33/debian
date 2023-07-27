@@ -94,15 +94,15 @@ done
 ```
 Instalação do Steam
 
-Instale o Steam através da Snap Store. Depois habilite a compatibilidade com o Linux no Settings -> Compatibillity. Use o Proton-GE para poder instalar jogos como o Neverwinter. Siga nos passos a seguir.
+Instale o Steam através da Snap Store. Depois habilite a compatibilidade com o Linux no Settings -> Compatibillity. 
+
+Instalação do Python
 ```sh
-sudo apt install python3-pip
-sudo apt install python3-venv
+sudo apt install python3-full
+```
+Para usar o ambiente virtual do Python usar:
+```sh
 python3 -m venv .venv
 . .venv/bin/activite
-pip3 install protonup
-protonup -d "~/.steam/root/compatibilitytools.d/"
-protonup
 ```
-Para utilizar o Proton-GE basta selecioná-lo na aba “Steam Play” da janela de configurações da sua Steam.
 
