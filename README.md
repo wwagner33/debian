@@ -22,7 +22,7 @@ Inserir no arquivo .bashrc as linhas:
 Trocar todo o conteúdo do arquivo /etc/apt/sources.list por:
 
 ```sh
-#deb cdrom:[Debian GNU/Linux 12.1.0 _Bookworm_ - Official amd64 NETINST with firmware 20230722-10:48]/ bookworm main non-free-firmware
+# deb cdrom:[Debian GNU/Linux 12.1.0 _Bookworm_ - Official amd64 NETINST with firmware 20230722-10:48]/ bookworm main non-free-firmware
 
 deb http://ftp.br.debian.org/debian/ bookworm main non-free-firmware
 deb-src http://ftp.br.debian.org/debian/ bookworm main non-free-firmware
@@ -45,7 +45,15 @@ deb http://deb.debian.org/debian bookworm-backports main contrib non-free
 deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free
 
 deb http://debian.pop-sc.rnp.br/debian/ bookworm-proposed-updates main contrib non-free non-free-firmware
+
 deb http://deb.debian.org/debian/ sid main contrib non-free
+deb https://deb.debian.org/debian/ trixie main contrib non-free-firmware non-free
+deb-src https://deb.debian.org/debian/ trixie main contrib non-free-firmware non-free #Added by software-properties
+deb https://deb.debian.org/debian/ trixie-proposed-updates non-free-firmware contrib main non-free
+
+#experimentals
+
+deb https://deb.debian.org/debian experimental main
 
 ``` 
 Atualizar os arquivos instalados e a distribuição Debian 11 para 12.
