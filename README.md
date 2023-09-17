@@ -117,4 +117,4 @@ python3 -m venv .venv
 Instalação do Kernel otimizado Liquorix
 ```sh
 curl -s 'https://liquorix.net/install-liquorix.sh' | sudo bash
-``
+```
