@@ -118,3 +118,7 @@ Instalação do Kernel otimizado Liquorix
 ```sh
 curl -s 'https://liquorix.net/install-liquorix.sh' | sudo bash
 ```
+Instalação do Grub Customizer
+```sh
+sudo apt update && sudo apt install grub-customizer
+```
