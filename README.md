@@ -111,7 +111,7 @@ sudo apt install python3-full
 Para usar o ambiente virtual do Python usar:
 ```sh
 python3 -m venv .venv
-. .venv/bin/activite
+. .venv/bin/activate
 ```
 
 Instalação do Kernel otimizado Liquorix
